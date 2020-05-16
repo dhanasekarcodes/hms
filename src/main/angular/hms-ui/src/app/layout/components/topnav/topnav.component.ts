@@ -33,6 +33,7 @@ export class TopnavComponent implements OnInit {
     }
 
     onLoggedout() {
+    	alert("LOGOUT!!!");
         localStorage.removeItem('isLoggedin');
         this.router.navigate(['/login']);
     }
